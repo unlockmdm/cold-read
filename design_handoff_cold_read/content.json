@@ -1,0 +1,340 @@
+{
+  "_readme": "Content extracted verbatim from the prototype. ARCH order is also the tie-break order (first highest score wins). PERS[i] = [low line (answer < 3), high line (answer > 3)] for questions 1-4. SUITS[suit][rank] = card meaning (rank '1' = Ace). PHRASE overrides the lower-cased meaning when it is inserted mid-sentence. SUIT_POS[suit][k] = sentence for position k (0 Past, 1 Present, 2 Future). AURA[stage] = [x%, y%, scale] of the copper background glow; LAVPOS[stage] = [x%, y%] of the lavender glow.",
+  "scale": [
+    "Strongly disagree",
+    "Disagree",
+    "Neutral",
+    "Agree",
+    "Strongly agree"
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "I tend to notice small changes in how people carry themselves when I'm talking to them.",
+      "role": "observable trait (personal line + reveal comparison)",
+      "variable": "body_language"
+    },
+    {
+      "id": "Q2",
+      "text": "I usually put some thought into how I present myself, even for casual outings.",
+      "role": "observable trait (personal line + reveal comparison)",
+      "variable": "appearance"
+    },
+    {
+      "id": "Q3",
+      "text": "When I'm excited about something, I tend to speak faster without realizing it.",
+      "role": "observable trait (personal line + reveal comparison)",
+      "variable": "speaking_speed"
+    },
+    {
+      "id": "Q4",
+      "text": "I sometimes have to remind myself to adjust how loudly I'm speaking.",
+      "role": "observable trait (personal line + reveal comparison)",
+      "variable": "speaking_volume"
+    },
+    {
+      "id": "Q5",
+      "text": "After spending a lot of time with others, I usually feel ready to keep socializing.",
+      "role": "archetype input",
+      "variable": "E"
+    },
+    {
+      "id": "Q6",
+      "text": "If a group is having trouble deciding something, I'm comfortable suggesting what we should do next.",
+      "role": "archetype input",
+      "variable": "A"
+    },
+    {
+      "id": "Q7",
+      "text": "When making a difficult choice, I tend to consider how it will affect others before focusing on the practical outcome.",
+      "role": "archetype input",
+      "variable": "F"
+    },
+    {
+      "id": "Q8",
+      "text": "I enjoy having a rough plan for my day, even if nothing important is scheduled.",
+      "role": "archetype input",
+      "variable": "J"
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "The Trailblazer",
+      "description": "Bold, adventurous, energetic, and willing to take risks.",
+      "fortune": "An unexpected opportunity is approaching. Your willingness to take the first step may lead you somewhere exciting.",
+      "lens_past": "You probably met this head-on.",
+      "lens_present": "You are the one who moves first.",
+      "advice": "Before you leap, name one person you will bring with you."
+    },
+    {
+      "name": "The Dreamer",
+      "description": "Imaginative, sensitive, creative, and open-minded.",
+      "fortune": "Something you've been quietly hoping for may begin to take shape. Trust your creativity.",
+      "lens_past": "You felt this more than you showed.",
+      "lens_present": "It is living in your imagination right now.",
+      "advice": "Write the hope down this week, and give it one practical step."
+    },
+    {
+      "name": "The Oracle",
+      "description": "Intuitive, analytical, reflective, and detail-oriented.",
+      "fortune": "A small detail others overlook may reveal an important answer. Pay attention to what isn't being said.",
+      "lens_past": "You noticed this before anyone said it out loud.",
+      "lens_present": "Watch the small signs around you now.",
+      "advice": "Say one thing out loud that you have only been observing."
+    },
+    {
+      "name": "The Architect",
+      "description": "Organized, determined, logical, and strategic.",
+      "fortune": "A plan you've been building is closer to taking shape than you realize. A small change could unlock progress.",
+      "lens_past": "You built something around this.",
+      "lens_present": "It already fits into a plan you are making.",
+      "advice": "Leave one part of the plan unplanned."
+    },
+    {
+      "name": "The Guardian",
+      "description": "Empathetic, loyal, supportive, and considerate.",
+      "fortune": "A meaningful connection may grow stronger. Someone may appreciate your presence more than you know.",
+      "lens_past": "You carried this for someone else.",
+      "lens_present": "Someone close to you is part of it now.",
+      "advice": "Let someone look after you for once."
+    }
+  ],
+  "personal_lines": [
+    {
+      "question": "Q1",
+      "low": "A new perspective may come from a detail you weren't looking for.",
+      "high": "You notice what others miss. Watch for an opportunity hiding in plain sight."
+    },
+    {
+      "question": "Q2",
+      "low": "Comfort suits you, and staying true to yourself will matter more than how it looks.",
+      "high": "The way you present yourself is about to open a door. Wear your confidence."
+    },
+    {
+      "question": "Q3",
+      "low": "Take your time. A thoughtful pause will say more than a quick answer.",
+      "high": "Things may move quickly soon. Let your enthusiasm carry you."
+    },
+    {
+      "question": "Q4",
+      "low": "Speak with intention and you will be heard, even quietly.",
+      "high": "You are learning the size of your own voice, and soon someone will need to hear it."
+    }
+  ],
+  "card_meanings": {
+    "Hearts": {
+      "1": "New emotional beginnings, love, or joyful news",
+      "2": "Togetherness, partnerships",
+      "3": "Emotional indecision or third-party involvement",
+      "4": "Stability in relationships",
+      "5": "Emotional or domestic change",
+      "6": "Harmony and cooperation",
+      "7": "Disappointment or unreliability in relationships",
+      "8": "Social opportunities with emotional potential",
+      "9": "Desire for deeper connection or family expansion",
+      "10": "Joyful gatherings or celebrations",
+      "J": "A romantic partner or close friend",
+      "Q": "A nurturing figure, romantic or maternal",
+      "K": "An affectionate, influential man"
+    },
+    "Diamonds": {
+      "1": "Important message, often about finances or love",
+      "2": "Positive financial news",
+      "3": "Financial indecision, possible legal conflicts",
+      "4": "Need for responsible spending",
+      "5": "Financial shift, gain or loss",
+      "6": "Financial responsibility and planning",
+      "7": "Financial warning, be cautious",
+      "8": "Unexpected gain or windfall",
+      "9": "Necessary expenses or large purchase",
+      "10": "Financial success",
+      "J": "Bringer of unwelcome news",
+      "Q": "A lively, social woman",
+      "K": "A powerful businessman or authority figure"
+    },
+    "Clubs": {
+      "1": "A gift, talent, or thirst for knowledge",
+      "2": "The importance of communication",
+      "3": "Creativity or the pressure that comes with it",
+      "4": "Mental clarity and focus",
+      "5": "A time for learning or change",
+      "6": "Trust your intuition",
+      "7": "Feeling confined in a relationship",
+      "8": "Confusion in communication or connection",
+      "9": "Completion of a project or phase",
+      "10": "Travel or movement",
+      "J": "A loyal and honest friend",
+      "Q": "A dynamic, influential woman",
+      "K": "A trustworthy and wise man"
+    },
+    "Spades": {
+      "1": "Major shift or ending to create new beginnings",
+      "2": "A difficult decision or conflict",
+      "3": "Sadness, bad news, or work-related stress",
+      "4": "Stability returning after hardship",
+      "5": "Letting go or leaving something behind",
+      "6": "A turn of fate affecting life or finances",
+      "7": "Loss due to conflict or separation",
+      "8": "Work-related obstacles requiring decisive action",
+      "9": "An approaching loss or conclusion",
+      "10": "Fear, anxiety, or sorrow",
+      "J": "A disruptive or deceitful person",
+      "Q": "A manipulative or harsh woman",
+      "K": "An authoritarian man causing tension"
+    }
+  },
+  "sentence_phrase_overrides": {
+    "1|Diamonds": "an important message, often about finances or love",
+    "4|Diamonds": "a need for responsible spending",
+    "5|Diamonds": "a financial shift, gain or loss",
+    "7|Diamonds": "a financial warning to be cautious",
+    "8|Diamonds": "an unexpected gain or windfall",
+    "9|Diamonds": "necessary expenses or a large purchase",
+    "J|Diamonds": "a bringer of unwelcome news",
+    "6|Clubs": "trusting your intuition",
+    "9|Clubs": "the completion of a project or phase",
+    "1|Spades": "a major shift or ending that makes room for new beginnings",
+    "9|Hearts": "a desire for deeper connection or family expansion"
+  },
+  "suit_position_sentences": {
+    "Hearts": [
+      "Something in your heart, a bond or a feeling, shaped who you are now.",
+      "This is happening in your feelings and your relationships.",
+      "What is coming will touch your heart and the people close to you."
+    ],
+    "Diamonds": [
+      "A question of money, work or worth left its mark on you.",
+      "Practical matters, money and work, are asking for your attention.",
+      "What is coming will affect your work, money or sense of worth."
+    ],
+    "Clubs": [
+      "Something you learned or said changed your direction.",
+      "Your ideas and conversations are where things are moving.",
+      "What is coming will test how you think, learn and speak up."
+    ],
+    "Spades": [
+      "A hard moment shaped the way you move today.",
+      "You are in the middle of a challenge that is changing you.",
+      "A challenge is ahead, and it will bring change with it."
+    ]
+  },
+  "story_openers": {
+    "default": [
+      "In your past, the ",
+      "In your present, the ",
+      "Ahead of you, the "
+    ],
+    "with_name": [
+      "{name}, in your past, the ",
+      "In your present, the ",
+      "Ahead of you, {name}, the "
+    ]
+  },
+  "positions": [
+    "Past",
+    "Present",
+    "Future"
+  ],
+  "draw_prompts": [
+    "Draw a card from the deck and lay it face up under the camera.",
+    "Draw a second card and lay it under the camera.",
+    "Draw your final card and lay it under the camera."
+  ],
+  "stages": [
+    {
+      "id": "attract",
+      "label": "Welcome"
+    },
+    {
+      "id": "consent",
+      "label": "Consent"
+    },
+    {
+      "id": "name",
+      "label": "Name"
+    },
+    {
+      "id": "quiz",
+      "label": "Questions"
+    },
+    {
+      "id": "draw",
+      "label": "Draw"
+    },
+    {
+      "id": "reading",
+      "label": "Reading"
+    },
+    {
+      "id": "reveal",
+      "label": "Reveal"
+    }
+  ],
+  "background_aura": {
+    "attract": [
+      50,
+      46,
+      1
+    ],
+    "consent": [
+      50,
+      108,
+      0.95
+    ],
+    "name": [
+      50,
+      70,
+      0.8
+    ],
+    "quiz": [
+      50,
+      112,
+      1
+    ],
+    "draw": [
+      74,
+      52,
+      0.75
+    ],
+    "reading": [
+      50,
+      30,
+      0.95
+    ],
+    "reveal": [
+      50,
+      -8,
+      0.85
+    ]
+  },
+  "background_lavender": {
+    "attract": [
+      85,
+      8
+    ],
+    "consent": [
+      12,
+      10
+    ],
+    "name": [
+      88,
+      20
+    ],
+    "quiz": [
+      10,
+      0
+    ],
+    "draw": [
+      8,
+      90
+    ],
+    "reading": [
+      90,
+      95
+    ],
+    "reveal": [
+      50,
+      110
+    ]
+  }
+}
