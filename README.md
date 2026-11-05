@@ -3,6 +3,10 @@
 **An AI fortune-telling station that shows you how it "read" you.**
 GBDA 414, Assignment 2
 
+### ▶ Try it live: **https://unlockmdm.github.io/cold-read/**
+
+Best in Chrome, full screen. Press **O** for the operator panel. No install needed.
+
 A visitor walks up and the screen calls them over. They agree to be sensed, give their name and answer 8 personality questions. Then they draw 3 real playing cards (Past, Present, Future) and lay them under an overhead camera. The machine recognizes each card, assigns the visitor one of 5 archetypes and tells their fortune card by card.
 
 Then it pulls back the curtain. It shows what the visitor *said* next to what the sensors *measured*, and the simple math that picked their "type".
